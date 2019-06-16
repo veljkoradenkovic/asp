@@ -23,7 +23,7 @@ namespace EfCommands.CategoryEfCommands
             {
                 throw new EntityNotFoundException("Category");
             }
-            if(Context.Categories.Any(x => x.Name == request.CategoryName)){
+            if(Context.Categories.Where(x => x.Id != request.CategoryId).Any(x => x.Name == request.CategoryName)){
                 throw new EntityAlreadyExistsException("Category");
             }
             category.Name = request.CategoryName;

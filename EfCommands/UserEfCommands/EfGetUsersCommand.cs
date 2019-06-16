@@ -42,7 +42,7 @@ namespace EfCommands.UserEfCommands
                     Email = user.Email,
                     LastName = user.LastName,
                     RoleName = user.Role.Name,
-                    PictureId = user.PictureId
+                    Id = user.Id
                 })
             };
 

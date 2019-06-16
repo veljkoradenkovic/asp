@@ -23,7 +23,7 @@ namespace EfCommands.NewsEfCommands
             var news = Context.News.AsQueryable();
 
             var newsDb = news.Include(u => u.User)
-                         .ThenInclude(p => p.Picture)
+                                .Include(p => p.Pictures)
                                 .Include(nc => nc.NewsCategories)
                                 .ThenInclude(c => c.Categories).Where(x => x.Id == request).FirstOrDefault();
             if (newsDb == null)

@@ -62,6 +62,9 @@ namespace Api
             services.AddTransient<IDeleteCommentCommand, EfDeleteCommentCommand>();
 
             services.AddTransient<IGetUsersCommand, EfGetUsersCommand>();
+            services.AddTransient<IGetUserCommand, EfGetUserCommand>();
+            services.AddTransient<IAddUserCommand, EfAddUserCommand>();
+            services.AddTransient<IEditUserCommand, EfEditUserCommand>();
             services.AddTransient<IDeleteUserCommand, EfDeleteUserCommand>();
 
 

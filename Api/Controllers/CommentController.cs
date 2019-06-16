@@ -55,9 +55,13 @@ namespace Api.Controllers
                 var dto = _getCommentCommand.Execute(id);
                 return Ok(dto);
             }
-            catch (EntityNotFoundException)
+            catch (EntityNotFoundException e)
             {
-                return NotFound();
+                if (e.Message == "Comment doesn't exist.")
+                {
+                    return NotFound(e.Message);
+                }
+                return UnprocessableEntity(e.Message);
             }
         }
 

@@ -41,7 +41,7 @@ namespace EfCommands.NewsEfCommands
             var totalRecords = query.Count();
 
             query = query.Include(u => u.User)
-                         .ThenInclude(p => p.Picture)
+                         .Include(p => p.Pictures)
                          .Skip((request.PageNumber - 1) * request.PerPage).Take(request.PerPage);
 
             var pagesCount = (int)Math.Ceiling((double)totalRecords / request.PerPage);

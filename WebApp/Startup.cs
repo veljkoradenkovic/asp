@@ -62,7 +62,7 @@ namespace WebApp
                 options.Cookie.IsEssential = true;
             });
 
-            services.AddTransient<IGetUserFromLoginForm, EfGetUserCommnd>();
+            services.AddTransient<IGetUserFromLoginForm, EfGetUserFromLoginFormCommand>();
 
             services.AddTransient<IAddCommentCommand, EfAddCommentCommand>();
             services.AddTransient<IGetCommentsCommand, EfGetCommentsCommand>();

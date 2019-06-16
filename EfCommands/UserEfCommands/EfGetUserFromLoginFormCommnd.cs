@@ -11,9 +11,9 @@ using System.Text;
 
 namespace EfCommands.UserEfCommands
 {
-    public class EfGetUserCommnd : BaseCommand, IGetUserFromLoginForm
+    public class EfGetUserFromLoginFormCommand : BaseCommand, IGetUserFromLoginForm
     {
-        public EfGetUserCommnd(NewsContext _context) : base(_context)
+        public EfGetUserFromLoginFormCommand(NewsContext _context) : base(_context)
         {
         }
 

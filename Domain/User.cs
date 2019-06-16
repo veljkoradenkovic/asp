@@ -16,10 +16,8 @@ namespace Domain
         public string Username { get; set; }
         public string Password { get; set; }
         public int RoleId { get; set; }
-        public int? PictureId { get; set; }
 
         public virtual Role Role { get; set; }
-        public virtual Picture Picture { get; set; }
         public virtual ICollection<News> News { get; set; }
     }
 }

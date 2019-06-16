@@ -18,7 +18,7 @@ namespace EfCommands.CategoryEfCommands
         {
             var category = Context.Categories.Find(request);
             if (category == null)
-                throw new EntityNotFoundException();
+                throw new EntityNotFoundException("Category");
 
             return new CategoryDto
             {
