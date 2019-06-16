@@ -30,4 +30,4 @@ Imamo mogucnost da kreiramo novinski clanak koji mora da pripada odredjenoj kate
   
   ## Dizajn baze podataka
   
-  ![dizajn-baze](http://prntscr.com/o2jof4)
+  ![dizajn-baze](https://www.photobox.co.uk/my/photo/full?photo_id=501935487090)
