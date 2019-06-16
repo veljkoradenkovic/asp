@@ -32,4 +32,4 @@ Imamo mogucnost da kreiramo novinski clanak koji mora da pripada odredjenoj kate
   
   ## Dizajn baze podataka
   
-  ![dizajn-baze]("/Screenshot_1.jpg")
+  ![dizajn-baze](Screenshot_1.jpg)
