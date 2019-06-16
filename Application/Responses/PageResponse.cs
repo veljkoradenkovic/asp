@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Application.Responses
 {
-    public class PageResponse<T> : List<T>
+    public class PageResponse<T> 
     {
         public int TotalCount { get; set; }
         public int PagesCount { get; set; }
