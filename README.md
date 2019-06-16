@@ -32,4 +32,4 @@ Imamo mogucnost da kreiramo novinski clanak koji mora da pripada odredjenoj kate
   
   ## Dizajn baze podataka
   
-  ![dizajn-baze](https://www.photobox.co.uk/my/photo/full?photo_id=501935487090)
+  ![dizajn-baze]("/https://prnt.sc/o2jof4")
