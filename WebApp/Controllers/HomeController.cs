@@ -41,6 +41,7 @@ namespace WebApp.Controllers
             try
             {
                 var find = _getUserCommand.Execute(model);
+                find.IsLogged = true;
                 HttpContext.Session.SetObjectAsJson(find);
                 return RedirectToAction(nameof(Index));
             }

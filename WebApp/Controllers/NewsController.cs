@@ -14,6 +14,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.FileProviders;
+using WebApp.Authorization;
 using WebApp.Helpers;
 using WebApp.Models;
 
@@ -69,11 +70,12 @@ namespace WebApp.Controllers
             }
             return View();
         }
-        
-        //[LoggedIn("Admin")]
+
+        //[ClaimRequirement(_user.RoleName, "Admin")]
         // GET: News/Create
         public ActionResult Create()
         {
+            ViewBag.Korisnik = HttpContext.Session.GetString("User");
             ViewBag.Categories = _getCategoriesCommand.Execute(null);
             return View();
         }
@@ -103,13 +105,12 @@ namespace WebApp.Controllers
         }
 
         // GET: News/Edit/5
-        [LoggedIn("Admin")]
         public ActionResult Edit(int id)
         {
             try
             {
                 var dto = _getNewCommand.Execute(id);
-                ViewBag.Categories = _getCategoriesCommand.Execute(null);
+                ViewBag.Categories = _getCategoriesCommand.Execute(new CategorySearch { });
                 return View(dto);
             }
             catch (EntityNotFoundException ex)
@@ -121,7 +122,6 @@ namespace WebApp.Controllers
         }
 
         // POST: News/Edit/5
-        [LoggedIn("Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, CreateNewsDto dto)
@@ -151,12 +151,12 @@ namespace WebApp.Controllers
             catch(EntityNotFoundException ex)
             {
                 TempData["error"] = ex.Message;
+                ViewBag.Categories = _getCategoriesCommand.Execute(new CategorySearch { });
                 return View();
             }
         }
 
         // GET: News/Delete/5
-        [LoggedIn("Admin")]
         public ActionResult Delete(int id)
         {
             try
@@ -172,7 +172,6 @@ namespace WebApp.Controllers
         }
 
         // POST: News/Delete/5
-        [LoggedIn("Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id, NewsDto newsDto)

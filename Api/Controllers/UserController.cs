@@ -31,6 +31,11 @@ namespace Api.Controllers
             _editUserCommand = editUserCommand;
         }
 
+        /// <summary>
+        /// Returns a group of Users matching the given keyword.
+        /// </summary>
+        /// <param name="search">The username to search for</param>
+        // GET: api/Gorivo
         // GET: api/User
         [HttpGet]
         public IActionResult Get([FromQuery] UserSearch search)
@@ -46,6 +51,11 @@ namespace Api.Controllers
             }
         }
 
+        /// <summary>
+        /// Retrieve the user by their ID.
+        /// </summary>
+        /// <param name="id">The ID of the desired USer</param>
+        /// <returns>A UserDto</returns>
         // GET: api/User/5
         [HttpGet("{id}", Name = "GetUser")]
         public ActionResult<UserDto> Get(int id)
@@ -66,6 +76,11 @@ namespace Api.Controllers
             }
         }
 
+        /// <summary>
+        /// Kreiranje novog usera 
+        /// </summary>
+        /// <param name="user">DTO potreban za kreiranje novog usera</param>
+        /// <returns>Status</returns>
         // POST: api/User
         [HttpPost]
         public IActionResult Post([FromBody] CreateUserDto user)
@@ -81,6 +96,11 @@ namespace Api.Controllers
             }
         }
 
+        /// <summary>
+        /// Izmena postojeceg korisnika
+        /// </summary>
+        /// <param name="user">DTO potreban za izmenu postojeceg korisnika</param>
+        /// <returns>Status</returns>
         // PUT: api/User/5
         [HttpPut("{id}")]
         public IActionResult Put(int id, [FromBody] CreateUserDto user)
@@ -101,6 +121,11 @@ namespace Api.Controllers
             }
         }
 
+        /// <summary>
+        /// Brisanje postojeceg korisnika
+        /// </summary>
+        /// <param name="id">id koji odgovara korisniku</param>
+        /// <returns>Status</returns>
         // DELETE: api/ApiWithActions/5
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)

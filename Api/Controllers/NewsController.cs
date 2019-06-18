@@ -31,6 +31,12 @@ namespace Api.Controllers
             _deleteNewsCommand = deleteNewsCommand;
             _editNewsCommand = editNewsCommand;
         }
+
+        /// <summary>
+        /// Returns a group of News matching the given keyword.
+        /// </summary>
+        /// <param name="search">The news heading to search for</param>
+        // GET: api/Gorivo
         // GET: api/<controller>
         [HttpGet]
         public ActionResult<NewsDto> Get([FromQuery] NewsSearch search)
@@ -47,6 +53,11 @@ namespace Api.Controllers
             
         }
 
+        /// <summary>
+        /// Retrieve the news by their ID.
+        /// </summary>
+        /// <param name="id">The ID of the desired News</param>
+        /// <returns>A NewsDto</returns>
         // GET api/<controller>/5
         [HttpGet("{id}")]
         public ActionResult<NewsDto> Get(int id)
@@ -62,6 +73,11 @@ namespace Api.Controllers
             }
         }
 
+        /// <summary>
+        /// Kreiranje nove vesti
+        /// </summary>
+        /// <param name="createDto">DTO potreban za kreiranje nove vesti</param>
+        /// <returns>Status</returns>
         // POST api/<controller>
         [HttpPost]
         public ActionResult Post([FromForm] CreateNewsDto createDto)
@@ -94,6 +110,11 @@ namespace Api.Controllers
             }
         }
 
+        /// <summary>
+        /// Izmena postojece vesti
+        /// </summary>
+        /// <param name="newsDto">DTO potreban za izmenu postojece vesti</param>
+        /// <returns>Status</returns>
         // PUT api/<controller>/5
         [HttpPut("{id}")]
         public IActionResult Put(int id, [FromBody]CreateNewsDto newsDto)
@@ -116,6 +137,11 @@ namespace Api.Controllers
             }
         }
 
+        /// <summary>
+        /// Brisanje postojece vesti
+        /// </summary>
+        /// <param name="id">id koji odgovara vesti</param>
+        /// <returns>Status</returns>
         // DELETE api/<controller>/5
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)

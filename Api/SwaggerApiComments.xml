@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Api</name>
+    </assembly>
+    <members>
+        <member name="M:Api.Controllers.CategoryController.Get(Application.SearchObjects.CategorySearch)">
+            <summary>
+            Returns a group of Categories matching the given keyword.
+            </summary>
+            <param name="search">The category name to search for</param>
+        </member>
+        <member name="M:Api.Controllers.CategoryController.Get(System.Int32)">
+            <summary>
+            Retrieve the category by their ID.
+            </summary>
+            <param name="id">The ID of the desired Category</param>
+            <returns>A CategoryDto</returns>
+        </member>
+        <member name="M:Api.Controllers.CategoryController.Post(Application.DataTransfer.Create.CreateCategoryDto)">
+            <summary>
+            Kreiranje nove kategorije 
+            </summary>
+            <param name="categoryDto">DTO potreban za kreiranje nove kategorije</param>
+            <returns>Status</returns>
+        </member>
+        <member name="M:Api.Controllers.CategoryController.Put(System.Int32,Application.DataTransfer.Create.CreateCategoryDto)">
+            <summary>
+            Izmena postojece kategorije
+            </summary>
+            <param name="category">DTO potreban za izmenu postojece kategorije</param>
+            <returns>Status</returns>
+        </member>
+        <member name="M:Api.Controllers.CategoryController.Delete(System.Int32)">
+            <summary>
+            Brisanje postojece kategorije
+            </summary>
+            <param name="id">id koji odgovara kategoriji</param>
+            <returns>Status</returns>
+        </member>
+        <member name="M:Api.Controllers.CommentController.Get(Application.SearchObjects.CommentSearch)">
+            <summary>
+            Returns a group of Comments matching the given keyword.
+            </summary>
+            <param name="search">The comment to search for</param>
+        </member>
+        <member name="M:Api.Controllers.CommentController.Get(System.Int32)">
+            <summary>
+            Retrieve the comment by their ID.
+            </summary>
+            <param name="id">The ID of the desired Comment</param>
+            <returns>A CommentDto</returns>
+        </member>
+        <member name="M:Api.Controllers.CommentController.Post(Application.DataTransfer.Create.CreateCommentDto)">
+            <summary>
+            Kreiranje novog komentara
+            </summary>
+            <param name="createDto">DTO potreban za kreiranje novog komentara</param>
+            <returns>Status</returns>
+        </member>
+        <member name="M:Api.Controllers.CommentController.Put(System.Int32,Application.DataTransfer.Create.CreateCommentDto)">
+            <summary>
+            Izmena postojeceg komentara
+            </summary>
+            <param name="createDto">DTO potreban za izmenu postojeceg komentara</param>
+            <returns>Status</returns>
+        </member>
+        <member name="M:Api.Controllers.CommentController.Delete(System.Int32)">
+            <summary>
+            Brisanje postojeceg komentara
+            </summary>
+            <param name="id">id koji odgovara komentaru</param>
+            <returns>Status</returns>
+        </member>
+        <member name="M:Api.Controllers.NewsController.Get(Application.SearchObjects.NewsSearch)">
+            <summary>
+            Returns a group of News matching the given keyword.
+            </summary>
+            <param name="search">The news heading to search for</param>
+        </member>
+        <member name="M:Api.Controllers.NewsController.Get(System.Int32)">
+            <summary>
+            Retrieve the news by their ID.
+            </summary>
+            <param name="id">The ID of the desired News</param>
+            <returns>A NewsDto</returns>
+        </member>
+        <member name="M:Api.Controllers.NewsController.Post(Application.DataTransfer.Create.CreateNewsDto)">
+            <summary>
+            Kreiranje nove vesti
+            </summary>
+            <param name="createDto">DTO potreban za kreiranje nove vesti</param>
+            <returns>Status</returns>
+        </member>
+        <member name="M:Api.Controllers.NewsController.Put(System.Int32,Application.DataTransfer.Create.CreateNewsDto)">
+            <summary>
+            Izmena postojece vesti
+            </summary>
+            <param name="newsDto">DTO potreban za izmenu postojece vesti</param>
+            <returns>Status</returns>
+        </member>
+        <member name="M:Api.Controllers.NewsController.Delete(System.Int32)">
+            <summary>
+            Brisanje postojece vesti
+            </summary>
+            <param name="id">id koji odgovara vesti</param>
+            <returns>Status</returns>
+        </member>
+        <member name="M:Api.Controllers.UserController.Get(Application.SearchObjects.UserSearch)">
+            <summary>
+            Returns a group of Users matching the given keyword.
+            </summary>
+            <param name="search">The username to search for</param>
+        </member>
+        <member name="M:Api.Controllers.UserController.Get(System.Int32)">
+            <summary>
+            Retrieve the user by their ID.
+            </summary>
+            <param name="id">The ID of the desired USer</param>
+            <returns>A UserDto</returns>
+        </member>
+        <member name="M:Api.Controllers.UserController.Post(Application.DataTransfer.Create.CreateUserDto)">
+            <summary>
+            Kreiranje novog usera 
+            </summary>
+            <param name="user">DTO potreban za kreiranje novog usera</param>
+            <returns>Status</returns>
+        </member>
+        <member name="M:Api.Controllers.UserController.Put(System.Int32,Application.DataTransfer.Create.CreateUserDto)">
+            <summary>
+            Izmena postojeceg korisnika
+            </summary>
+            <param name="user">DTO potreban za izmenu postojeceg korisnika</param>
+            <returns>Status</returns>
+        </member>
+        <member name="M:Api.Controllers.UserController.Delete(System.Int32)">
+            <summary>
+            Brisanje postojeceg korisnika
+            </summary>
+            <param name="id">id koji odgovara korisniku</param>
+            <returns>Status</returns>
+        </member>
+    </members>
+</doc>

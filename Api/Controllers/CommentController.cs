@@ -31,6 +31,11 @@ namespace Api.Controllers
             _deleteCommentCommand = deleteCommentCommand;
         }
 
+        /// <summary>
+        /// Returns a group of Comments matching the given keyword.
+        /// </summary>
+        /// <param name="search">The comment to search for</param>
+        // GET: api/Gorivo
         // GET: api/Comment
         [HttpGet]
         public IActionResult Get([FromQuery] CommentSearch search)
@@ -46,6 +51,11 @@ namespace Api.Controllers
             }
         }
 
+        /// <summary>
+        /// Retrieve the comment by their ID.
+        /// </summary>
+        /// <param name="id">The ID of the desired Comment</param>
+        /// <returns>A CommentDto</returns>
         // GET api/Comment/5
         [HttpGet("{id}")]
         public ActionResult<CommentDto> Get(int id)
@@ -65,6 +75,11 @@ namespace Api.Controllers
             }
         }
 
+        /// <summary>
+        /// Kreiranje novog komentara
+        /// </summary>
+        /// <param name="createDto">DTO potreban za kreiranje novog komentara</param>
+        /// <returns>Status</returns>
         // POST api/Comment
         [LoggedIn("Admin")]
         [HttpPost]
@@ -82,6 +97,11 @@ namespace Api.Controllers
             }
         }
 
+        /// <summary>
+        /// Izmena postojeceg komentara
+        /// </summary>
+        /// <param name="createDto">DTO potreban za izmenu postojeceg komentara</param>
+        /// <returns>Status</returns>
         // PUT api/Comment/5
         [LoggedIn("Admin")]
         [HttpPut("{id}")]
@@ -110,6 +130,11 @@ namespace Api.Controllers
             }
         }
 
+        /// <summary>
+        /// Brisanje postojeceg komentara
+        /// </summary>
+        /// <param name="id">id koji odgovara komentaru</param>
+        /// <returns>Status</returns>
         // DELETE api/Comment/5
         [LoggedIn("Admin")]
         [HttpDelete("{id}")]

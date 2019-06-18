@@ -54,8 +54,20 @@ namespace WebApp.Controllers
         //[LoggedIn]
         public ActionResult Details(int id)
         {
-            var dto = _getCommentCommand.Execute(id);
-            return View(dto);
+            try
+            {
+                var dto = _getCommentCommand.Execute(id);
+                return View(dto);
+            }
+            catch (EntityNotFoundException ex)
+            {
+                TempData["error"] = ex.Message;
+            }
+            catch(Exception e)
+            {
+                TempData["greska"] = "Doslo je do greske.";
+            }
+            return View();
         }
 
         // GET: Comment/Create

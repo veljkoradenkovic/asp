@@ -33,7 +33,7 @@
             </div>
             <div class="form-group">
                 <select name="CategoryIds" multiple="multiple">
-                    @foreach (var s in ViewBag.Categories)
+                    @foreach (var s in ViewBag.Categories.Data)
                     {
                         <option value="@s.Id" selected="@Model.NewsDetail.Any(x => x.CategoryId == s.Id)">@s.Name</option>
                     }
@@ -42,6 +42,7 @@
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
+            @Html.HiddenFor(x => x.Id)
         </form>
     </div>
 </div>

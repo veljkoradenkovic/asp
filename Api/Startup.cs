@@ -25,6 +25,7 @@ using Application.Commands.Comment;
 using Application;
 using Application.Commands.User;
 using EfCommands.UserEfCommands;
+using System.IO;
 
 namespace Api
 {
@@ -107,6 +108,12 @@ namespace Api
                     Title = "News Api",
                     Description = "This is swagger specification" 
                 });
+
+                var xmlFile = "SwaggerApiComments.XML";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+
+                //... and tell Swagger to use those XML comments.
+                c.IncludeXmlComments(xmlPath);
             });
         }
 
