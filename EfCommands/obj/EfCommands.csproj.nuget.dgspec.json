@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\aspp\\EfCommands\\EfCommands.csproj": {}
+    "C:\\STEFAN\\FAX\\Treca godina\\TRECI TRIMESTAR\\ASP\\vezbanje\\asp\\EfCommands\\EfCommands.csproj": {}
   },
   "projects": {
-    "C:\\aspp\\Application\\Application.csproj": {
+    "C:\\STEFAN\\FAX\\Treca godina\\TRECI TRIMESTAR\\ASP\\vezbanje\\asp\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\aspp\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\STEFAN\\FAX\\Treca godina\\TRECI TRIMESTAR\\ASP\\vezbanje\\asp\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\aspp\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\veljk\\.nuget\\packages\\",
-        "outputPath": "C:\\aspp\\Application\\obj\\",
+        "projectPath": "C:\\STEFAN\\FAX\\Treca godina\\TRECI TRIMESTAR\\ASP\\vezbanje\\asp\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\ShekiBrate\\.nuget\\packages\\",
+        "outputPath": "C:\\STEFAN\\FAX\\Treca godina\\TRECI TRIMESTAR\\ASP\\vezbanje\\asp\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\veljk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ShekiBrate\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -56,20 +56,20 @@
         }
       }
     },
-    "C:\\aspp\\Domain\\Domain.csproj": {
+    "C:\\STEFAN\\FAX\\Treca godina\\TRECI TRIMESTAR\\ASP\\vezbanje\\asp\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\aspp\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\STEFAN\\FAX\\Treca godina\\TRECI TRIMESTAR\\ASP\\vezbanje\\asp\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\aspp\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\veljk\\.nuget\\packages\\",
-        "outputPath": "C:\\aspp\\Domain\\obj\\",
+        "projectPath": "C:\\STEFAN\\FAX\\Treca godina\\TRECI TRIMESTAR\\ASP\\vezbanje\\asp\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\ShekiBrate\\.nuget\\packages\\",
+        "outputPath": "C:\\STEFAN\\FAX\\Treca godina\\TRECI TRIMESTAR\\ASP\\vezbanje\\asp\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\veljk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ShekiBrate\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -108,20 +108,20 @@
         }
       }
     },
-    "C:\\aspp\\EfCommands\\EfCommands.csproj": {
+    "C:\\STEFAN\\FAX\\Treca godina\\TRECI TRIMESTAR\\ASP\\vezbanje\\asp\\EfCommands\\EfCommands.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\aspp\\EfCommands\\EfCommands.csproj",
+        "projectUniqueName": "C:\\STEFAN\\FAX\\Treca godina\\TRECI TRIMESTAR\\ASP\\vezbanje\\asp\\EfCommands\\EfCommands.csproj",
         "projectName": "EfCommands",
-        "projectPath": "C:\\aspp\\EfCommands\\EfCommands.csproj",
-        "packagesPath": "C:\\Users\\veljk\\.nuget\\packages\\",
-        "outputPath": "C:\\aspp\\EfCommands\\obj\\",
+        "projectPath": "C:\\STEFAN\\FAX\\Treca godina\\TRECI TRIMESTAR\\ASP\\vezbanje\\asp\\EfCommands\\EfCommands.csproj",
+        "packagesPath": "C:\\Users\\ShekiBrate\\.nuget\\packages\\",
+        "outputPath": "C:\\STEFAN\\FAX\\Treca godina\\TRECI TRIMESTAR\\ASP\\vezbanje\\asp\\EfCommands\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\veljk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ShekiBrate\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -134,11 +134,11 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\aspp\\Application\\Application.csproj": {
-                "projectPath": "C:\\aspp\\Application\\Application.csproj"
+              "C:\\STEFAN\\FAX\\Treca godina\\TRECI TRIMESTAR\\ASP\\vezbanje\\asp\\Application\\Application.csproj": {
+                "projectPath": "C:\\STEFAN\\FAX\\Treca godina\\TRECI TRIMESTAR\\ASP\\vezbanje\\asp\\Application\\Application.csproj"
               },
-              "C:\\aspp\\EfDataAccess\\EfDataAccess.csproj": {
-                "projectPath": "C:\\aspp\\EfDataAccess\\EfDataAccess.csproj"
+              "C:\\STEFAN\\FAX\\Treca godina\\TRECI TRIMESTAR\\ASP\\vezbanje\\asp\\EfDataAccess\\EfDataAccess.csproj": {
+                "projectPath": "C:\\STEFAN\\FAX\\Treca godina\\TRECI TRIMESTAR\\ASP\\vezbanje\\asp\\EfDataAccess\\EfDataAccess.csproj"
               }
             }
           }
@@ -167,20 +167,20 @@
         }
       }
     },
-    "C:\\aspp\\EfDataAccess\\EfDataAccess.csproj": {
+    "C:\\STEFAN\\FAX\\Treca godina\\TRECI TRIMESTAR\\ASP\\vezbanje\\asp\\EfDataAccess\\EfDataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\aspp\\EfDataAccess\\EfDataAccess.csproj",
+        "projectUniqueName": "C:\\STEFAN\\FAX\\Treca godina\\TRECI TRIMESTAR\\ASP\\vezbanje\\asp\\EfDataAccess\\EfDataAccess.csproj",
         "projectName": "EfDataAccess",
-        "projectPath": "C:\\aspp\\EfDataAccess\\EfDataAccess.csproj",
-        "packagesPath": "C:\\Users\\veljk\\.nuget\\packages\\",
-        "outputPath": "C:\\aspp\\EfDataAccess\\obj\\",
+        "projectPath": "C:\\STEFAN\\FAX\\Treca godina\\TRECI TRIMESTAR\\ASP\\vezbanje\\asp\\EfDataAccess\\EfDataAccess.csproj",
+        "packagesPath": "C:\\Users\\ShekiBrate\\.nuget\\packages\\",
+        "outputPath": "C:\\STEFAN\\FAX\\Treca godina\\TRECI TRIMESTAR\\ASP\\vezbanje\\asp\\EfDataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\veljk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ShekiBrate\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -193,8 +193,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\aspp\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\aspp\\Domain\\Domain.csproj"
+              "C:\\STEFAN\\FAX\\Treca godina\\TRECI TRIMESTAR\\ASP\\vezbanje\\asp\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\STEFAN\\FAX\\Treca godina\\TRECI TRIMESTAR\\ASP\\vezbanje\\asp\\Domain\\Domain.csproj"
               }
             }
           }

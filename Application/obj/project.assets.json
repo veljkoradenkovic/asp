@@ -686,23 +686,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\veljk\\.nuget\\packages\\": {},
+    "C:\\Users\\ShekiBrate\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\aspp\\Application\\Application.csproj",
+      "projectUniqueName": "C:\\STEFAN\\FAX\\Treca godina\\TRECI TRIMESTAR\\ASP\\vezbanje\\asp\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "C:\\aspp\\Application\\Application.csproj",
-      "packagesPath": "C:\\Users\\veljk\\.nuget\\packages\\",
-      "outputPath": "C:\\aspp\\Application\\obj\\",
+      "projectPath": "C:\\STEFAN\\FAX\\Treca godina\\TRECI TRIMESTAR\\ASP\\vezbanje\\asp\\Application\\Application.csproj",
+      "packagesPath": "C:\\Users\\ShekiBrate\\.nuget\\packages\\",
+      "outputPath": "C:\\STEFAN\\FAX\\Treca godina\\TRECI TRIMESTAR\\ASP\\vezbanje\\asp\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\veljk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ShekiBrate\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

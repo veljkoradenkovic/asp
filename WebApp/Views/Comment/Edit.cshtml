@@ -31,13 +31,14 @@
                 <select name="NewsId" multiple="multiple">
                     @foreach (var n in ViewBag.News)
                     {
-                        <option value="@n.NewsId" selected="@Model.News.NewsId == n.NewsId ? true : false ">@n.Heading</option>
+                        <option value="@n.NewsId" selected="@Model.News.NewsId == n.NewsId ? true : false">@n.Heading</option>
                     }
                 </select>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
+            @Html.HiddenFor(x => x.Id)
         </form>
     </div>
 </div>

@@ -188,8 +188,6 @@ namespace EfDataAccess.Migrations
 
                     b.Property<string>("Password");
 
-                    b.Property<int?>("PictureId");
-
                     b.Property<int>("RoleId");
 
                     b.Property<string>("Username")
@@ -197,8 +195,6 @@ namespace EfDataAccess.Migrations
                         .HasMaxLength(15);
 
                     b.HasKey("Id");
-
-                    b.HasIndex("PictureId");
 
                     b.HasIndex("RoleId");
 
@@ -246,10 +242,6 @@ namespace EfDataAccess.Migrations
 
             modelBuilder.Entity("Domain.User", b =>
                 {
-                    b.HasOne("Domain.Picture", "Picture")
-                        .WithMany()
-                        .HasForeignKey("PictureId");
-
                     b.HasOne("Domain.Role", "Role")
                         .WithMany("Users")
                         .HasForeignKey("RoleId");

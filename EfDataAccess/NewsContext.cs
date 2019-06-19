@@ -18,7 +18,7 @@ namespace EfDataAccess
         public DbSet<Comments> Comments { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data Source=DESKTOP-B77QJ8H\SQLEXPRESS;Initial Catalog=projektii;Integrated Security=True;Pooling=False");
+            optionsBuilder.UseSqlServer(@"Data Source=SHEKIBRATE\ARGOSY;Initial Catalog=newsProject;Integrated Security=True");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
